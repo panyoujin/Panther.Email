@@ -1,0 +1,125 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panther.Email.Winform", "Panther.Email.Winform\Panther.Email.Winform.csproj", "{82BDAF86-D9F4-4008-82C1-66DB2992141D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panther.Email.Services", "Panther.Email.Services\Panther.Email.Services.csproj", "{1F5DE936-F318-420B-9C71-690E3210D53A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panther.Email.DataAccess", "Panther.Email.DataAccess\Panther.Email.DataAccess.csproj", "{CFE9CDDD-1D08-4ACF-A5B8-B0CE7EF5E331}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panther.Email.Business", "Panther.Email.Business\Panther.Email.Business.csproj", "{6D12A96D-78BE-44AC-910F-3C6AFC414B50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panther.Email.Entity", "Panther.Email.Entity\Panther.Email.Entity.csproj", "{6AEDEB83-406F-4420-89BF-4F813B1D8ACB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assemblies", "Assemblies", "{79E55176-C709-4A72-AFC9-1408E6C9CFA2}"
+	ProjectSection(SolutionItems) = preProject
+		Assemblies\HtmlAgilityPack.dll = Assemblies\HtmlAgilityPack.dll
+		Assemblies\HttpServer.dll = Assemblies\HttpServer.dll
+		Assemblies\log4net.dll = Assemblies\log4net.dll
+		Assemblies\LumiSoft.Net.dll = Assemblies\LumiSoft.Net.dll
+		Assemblies\NPOI.dll = Assemblies\NPOI.dll
+		Assemblies\SgmlReaderDll.dll = Assemblies\SgmlReaderDll.dll
+		Assemblies\WinFormHTMLTextBox.dll = Assemblies\WinFormHTMLTextBox.dll
+		Assemblies\ZetaHtmlEditControl.dll = Assemblies\ZetaHtmlEditControl.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panther.Email.Core", "Panther.Email.Core\Panther.Email.Core.csproj", "{AECA0099-79F5-4543-9DAE-3C0CD4AC0A76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Control", "Control\Control.csproj", "{B00AE765-8212-43FD-8E70-768A6C20EE93}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://904709108.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Panther.Email.Winform\\Panther.Email.Winform.csproj
+		SccProjectName1 = Panther.Email.Winform
+		SccLocalPath1 = Panther.Email.Winform
+		SccProjectUniqueName2 = Panther.Email.Services\\Panther.Email.Services.csproj
+		SccProjectName2 = Panther.Email.Services
+		SccLocalPath2 = Panther.Email.Services
+		SccProjectUniqueName3 = Panther.Email.DataAccess\\Panther.Email.DataAccess.csproj
+		SccProjectName3 = Panther.Email.DataAccess
+		SccLocalPath3 = Panther.Email.DataAccess
+		SccProjectUniqueName4 = Panther.Email.Business\\Panther.Email.Business.csproj
+		SccProjectName4 = Panther.Email.Business
+		SccLocalPath4 = Panther.Email.Business
+		SccProjectUniqueName5 = Panther.Email.Core\\Panther.Email.Core.csproj
+		SccProjectName5 = Panther.Email.Core
+		SccLocalPath5 = Panther.Email.Core
+		SccProjectUniqueName6 = Panther.Email.Entity\\Panther.Email.Entity.csproj
+		SccProjectName6 = Panther.Email.Entity
+		SccLocalPath6 = Panther.Email.Entity
+		SccProjectUniqueName7 = Control\\Control.csproj
+		SccProjectName7 = Control
+		SccLocalPath7 = Control
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82BDAF86-D9F4-4008-82C1-66DB2992141D}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{82BDAF86-D9F4-4008-82C1-66DB2992141D}.Debug|Any CPU.Build.0 = Debug|x86
+		{82BDAF86-D9F4-4008-82C1-66DB2992141D}.Debug|x86.ActiveCfg = Debug|x86
+		{82BDAF86-D9F4-4008-82C1-66DB2992141D}.Debug|x86.Build.0 = Debug|x86
+		{82BDAF86-D9F4-4008-82C1-66DB2992141D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82BDAF86-D9F4-4008-82C1-66DB2992141D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82BDAF86-D9F4-4008-82C1-66DB2992141D}.Release|x86.ActiveCfg = Release|x86
+		{82BDAF86-D9F4-4008-82C1-66DB2992141D}.Release|x86.Build.0 = Release|x86
+		{1F5DE936-F318-420B-9C71-690E3210D53A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{1F5DE936-F318-420B-9C71-690E3210D53A}.Debug|Any CPU.Build.0 = Debug|x86
+		{1F5DE936-F318-420B-9C71-690E3210D53A}.Debug|x86.ActiveCfg = Debug|x86
+		{1F5DE936-F318-420B-9C71-690E3210D53A}.Debug|x86.Build.0 = Debug|x86
+		{1F5DE936-F318-420B-9C71-690E3210D53A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F5DE936-F318-420B-9C71-690E3210D53A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F5DE936-F318-420B-9C71-690E3210D53A}.Release|x86.ActiveCfg = Release|x86
+		{1F5DE936-F318-420B-9C71-690E3210D53A}.Release|x86.Build.0 = Release|x86
+		{CFE9CDDD-1D08-4ACF-A5B8-B0CE7EF5E331}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{CFE9CDDD-1D08-4ACF-A5B8-B0CE7EF5E331}.Debug|Any CPU.Build.0 = Debug|x86
+		{CFE9CDDD-1D08-4ACF-A5B8-B0CE7EF5E331}.Debug|x86.ActiveCfg = Debug|x86
+		{CFE9CDDD-1D08-4ACF-A5B8-B0CE7EF5E331}.Debug|x86.Build.0 = Debug|x86
+		{CFE9CDDD-1D08-4ACF-A5B8-B0CE7EF5E331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFE9CDDD-1D08-4ACF-A5B8-B0CE7EF5E331}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFE9CDDD-1D08-4ACF-A5B8-B0CE7EF5E331}.Release|x86.ActiveCfg = Release|x86
+		{CFE9CDDD-1D08-4ACF-A5B8-B0CE7EF5E331}.Release|x86.Build.0 = Release|x86
+		{6D12A96D-78BE-44AC-910F-3C6AFC414B50}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{6D12A96D-78BE-44AC-910F-3C6AFC414B50}.Debug|Any CPU.Build.0 = Debug|x86
+		{6D12A96D-78BE-44AC-910F-3C6AFC414B50}.Debug|x86.ActiveCfg = Debug|x86
+		{6D12A96D-78BE-44AC-910F-3C6AFC414B50}.Debug|x86.Build.0 = Debug|x86
+		{6D12A96D-78BE-44AC-910F-3C6AFC414B50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D12A96D-78BE-44AC-910F-3C6AFC414B50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D12A96D-78BE-44AC-910F-3C6AFC414B50}.Release|x86.ActiveCfg = Release|x86
+		{6D12A96D-78BE-44AC-910F-3C6AFC414B50}.Release|x86.Build.0 = Release|x86
+		{6AEDEB83-406F-4420-89BF-4F813B1D8ACB}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{6AEDEB83-406F-4420-89BF-4F813B1D8ACB}.Debug|Any CPU.Build.0 = Debug|x86
+		{6AEDEB83-406F-4420-89BF-4F813B1D8ACB}.Debug|x86.ActiveCfg = Debug|x86
+		{6AEDEB83-406F-4420-89BF-4F813B1D8ACB}.Debug|x86.Build.0 = Debug|x86
+		{6AEDEB83-406F-4420-89BF-4F813B1D8ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AEDEB83-406F-4420-89BF-4F813B1D8ACB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AEDEB83-406F-4420-89BF-4F813B1D8ACB}.Release|x86.ActiveCfg = Release|x86
+		{6AEDEB83-406F-4420-89BF-4F813B1D8ACB}.Release|x86.Build.0 = Release|x86
+		{AECA0099-79F5-4543-9DAE-3C0CD4AC0A76}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{AECA0099-79F5-4543-9DAE-3C0CD4AC0A76}.Debug|Any CPU.Build.0 = Debug|x86
+		{AECA0099-79F5-4543-9DAE-3C0CD4AC0A76}.Debug|x86.ActiveCfg = Debug|x86
+		{AECA0099-79F5-4543-9DAE-3C0CD4AC0A76}.Debug|x86.Build.0 = Debug|x86
+		{AECA0099-79F5-4543-9DAE-3C0CD4AC0A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AECA0099-79F5-4543-9DAE-3C0CD4AC0A76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AECA0099-79F5-4543-9DAE-3C0CD4AC0A76}.Release|x86.ActiveCfg = Release|x86
+		{AECA0099-79F5-4543-9DAE-3C0CD4AC0A76}.Release|x86.Build.0 = Release|x86
+		{B00AE765-8212-43FD-8E70-768A6C20EE93}.Debug|Any CPU.ActiveCfg = Release|x86
+		{B00AE765-8212-43FD-8E70-768A6C20EE93}.Debug|Any CPU.Build.0 = Release|x86
+		{B00AE765-8212-43FD-8E70-768A6C20EE93}.Debug|x86.ActiveCfg = Release|x86
+		{B00AE765-8212-43FD-8E70-768A6C20EE93}.Debug|x86.Build.0 = Release|x86
+		{B00AE765-8212-43FD-8E70-768A6C20EE93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B00AE765-8212-43FD-8E70-768A6C20EE93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B00AE765-8212-43FD-8E70-768A6C20EE93}.Release|x86.ActiveCfg = Release|x86
+		{B00AE765-8212-43FD-8E70-768A6C20EE93}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

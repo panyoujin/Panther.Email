@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{82BDAF86-D9F4-4008-82C1-66DB2992141D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Panther.Email.Winform</RootNamespace>
+    <AssemblyName>Panther.Email.Winform</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\Assemblies\WHC.Pager.WinControlEx\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\Assemblies\WHC.Pager.WinControlEx\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\Assemblies\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="LumiSoft.Net, Version=2.0.5161.15943, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\LumiSoft.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\Assemblies\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WHC.Pager.Entity">
+      <HintPath>..\Assemblies\WHC.Pager.WinControlEx\WHC.Pager.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="WHC.Pager.WinControlEx">
+      <HintPath>..\Assemblies\WHC.Pager.WinControlEx\WHC.Pager.WinControlEx.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddOneContactForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOneContactForm.Designer.cs">
+      <DependentUpon>AddOneContactForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSendMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSendMail.Designer.cs">
+      <DependentUpon>AddSendMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ExportBccAccount.cs" />
+    <Compile Include="ContactsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContactsForm.Designer.cs">
+      <DependentUpon>ContactsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DataGridControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DataGridControl.Designer.cs">
+      <DependentUpon>DataGridControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DraftControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DraftControl.Designer.cs">
+      <DependentUpon>DraftControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EditSendMail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\EditSendMail.Designer.cs">
+      <DependentUpon>EditSendMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MessageControl\SelectBccForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\MessageControl\SelectBccForm.Designer.cs">
+      <DependentUpon>SelectBccForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MessageControl\SelectReceptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\MessageControl\SelectReceptForm.Designer.cs">
+      <DependentUpon>SelectReceptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MessageControl\SelectSendForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\MessageControl\SelectSendForm.Designer.cs">
+      <DependentUpon>SelectSendForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ReceiptControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ReceiptControl.Designer.cs">
+      <DependentUpon>ReceiptControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SendControlControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SendControlControl.Designer.cs">
+      <DependentUpon>SendControlControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmailManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmailManagerForm.Designer.cs">
+      <DependentUpon>EmailManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GarbageEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GarbageEmail.Designer.cs">
+      <DependentUpon>GarbageEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMDIForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMDIForm.Designer.cs">
+      <DependentUpon>MainMDIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewMessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewMessageForm.Designer.cs">
+      <DependentUpon>NewMessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddOneContactForm.resx">
+      <DependentUpon>AddOneContactForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSendMail.resx">
+      <DependentUpon>AddSendMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactsForm.resx">
+      <DependentUpon>ContactsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DataGridControl.resx">
+      <DependentUpon>DataGridControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DraftControl.resx">
+      <DependentUpon>DraftControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\EditSendMail.resx">
+      <DependentUpon>EditSendMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MessageControl\SelectBccForm.resx">
+      <DependentUpon>SelectBccForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MessageControl\SelectReceptForm.resx">
+      <DependentUpon>SelectReceptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MessageControl\SelectSendForm.resx">
+      <DependentUpon>SelectSendForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ReceiptControl.resx">
+      <DependentUpon>ReceiptControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SendControlControl.resx">
+      <DependentUpon>SendControlControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmailManagerForm.resx">
+      <DependentUpon>EmailManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GarbageEmail.resx">
+      <DependentUpon>GarbageEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMDIForm.resx">
+      <DependentUpon>MainMDIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewMessageForm.resx">
+      <DependentUpon>NewMessageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="excel\ReceiptMail.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="excel\SendMail.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Control\Control.csproj">
+      <Project>{b00ae765-8212-43fd-8e70-768a6c20ee93}</Project>
+      <Name>Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Panther.Email.Business\Panther.Email.Business.csproj">
+      <Project>{6d12a96d-78be-44ac-910f-3c6afc414b50}</Project>
+      <Name>Panther.Email.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Panther.Email.Core\Panther.Email.Core.csproj">
+      <Project>{aeca0099-79f5-4543-9dae-3c0cd4ac0a76}</Project>
+      <Name>Panther.Email.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Panther.Email.Entity\Panther.Email.Entity.csproj">
+      <Project>{6aedeb83-406f-4420-89bf-4f813b1d8acb}</Project>
+      <Name>Panther.Email.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Imgs\104.ico" />
+    <Content Include="Imgs\addMail.ico" />
+    <Content Include="Imgs\backData.ico" />
+    <Content Include="Imgs\Contacts.ico" />
+    <Content Include="Imgs\draftMail.png" />
+    <Content Include="Imgs\export.ico" />
+    <Content Include="Imgs\import.ico" />
+    <Content Include="Imgs\mail.png" />
+    <Content Include="Imgs\receiptsMail.png" />
+    <Content Include="Imgs\save.ico" />
+    <Content Include="Imgs\sending.ico" />
+    <Content Include="Imgs\sendMail.png" />
+    <Content Include="Imgs\sunmit.ico" />
+    <Content Include="Imgs\sysIco.ico" />
+    <Content Include="Imgs\Search.ico" />
+    <Content Include="Imgs\NewMessage.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

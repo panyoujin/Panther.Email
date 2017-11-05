@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Services>
+  <Service>
+    <Assembly>Panther.Email.Services.exe</Assembly>
+    <Methods>Panther.Email.Services.SendEmail.SmartSendEmail</Methods>
+    <Interval>90</Interval>
+  </Service>
+  <!--<Service>
+    <Assembly>Panther.Email.Services.exe</Assembly>
+    <Methods>Panther.Email.Services.ReceiveEmail.SmartReceiveEmail</Methods>
+    <Interval>5</Interval>
+  </Service>-->
+</Services>
