@@ -60,12 +60,13 @@ namespace Panther.Email.Services.SendEmail
                             LogHelper.Info("邮件正文為空，无法发送");
                             continue;
                         }
-                        var t = new Thread(s =>
-                            {
-                                var info = s as EmailInfo;
-                                SendEmail(info);
-                            });
-                        t.Start(emailInfo);
+                        SendEmail(emailInfo);
+                        //var t = new Thread(s =>
+                        //    {
+                        //        var info = s as EmailInfo;
+                        //        SendEmail(info);
+                        //    });
+                        //t.Start(emailInfo);
                     }
                 }
                 SleepInterval(Interval);
@@ -74,11 +75,11 @@ namespace Panther.Email.Services.SendEmail
 
         void SendEmail(EmailInfo emailInfo)
         {
-            if (SendingEmailInfo.Where(e => e.EmailID == emailInfo.EmailID).Count() > 0)
-            {
-                //如果已经在发送队列里面了
-                return;
-            }
+            //if (SendingEmailInfo.Where(e => e.EmailID == emailInfo.EmailID).Count() > 0)
+            //{
+            //    //如果已经在发送队列里面了
+            //    return;
+            //}
             //获取发送邮件的邮箱集合
             List<EmailAccount> emailAccountList = GetEmailSendAccount(emailInfo);
             if (emailAccountList == null || emailAccountList.Count <= 0)
@@ -96,7 +97,7 @@ namespace Panther.Email.Services.SendEmail
             {
                 return;
             }
-            SendingEmailInfo.Add(emailInfo);
+            //SendingEmailInfo.Add(emailInfo);
             var complete = false;
             foreach (EmailAccount emailAccount in emailAccountList)
             {
@@ -104,8 +105,16 @@ namespace Panther.Email.Services.SendEmail
             }
             while (!complete && IsStart)
             {
-                foreach (EmailAccount emailAccount in emailAccountList)
+                foreach (EmailAccount ea in emailAccountList)
                 {
+                    //不额外增加获取指定邮箱 直接获取全部
+                    var eaList = GetEmailSendAccount(emailInfo);
+                    if (eaList == null || eaList.Count() <= 0 || eaList.Where(a => a.EmailAccountID == ea.EmailAccountID).Count() <= 0)
+                    {
+                        continue;
+                    }
+                    //每次发送前再获取一次数据防止在其他电脑使用了
+                    var emailAccount = eaList.Where(a => a.EmailAccountID == ea.EmailAccountID).FirstOrDefault();
                     //当前邮箱的下次发送时间小等于当前时间，并且剩余发送数量大于0
                     if (emailAccount.EmailAccountLastTime <= DateTime.Now && emailAccount.EmailAccountRemainEmailCount > 0)
                     {
@@ -139,7 +148,7 @@ namespace Panther.Email.Services.SendEmail
                 }
                 SleepInterval(Interval * 2);
             }
-            SendingEmailInfo.Remove(emailInfo);
+            //SendingEmailInfo.Remove(emailInfo);
         }
         /// <summary>
         /// 读取下一个能进行发送的邮件
